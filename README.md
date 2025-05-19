@@ -1,11 +1,11 @@
 # Olympics Azure Data Engineering Project
 
-##Introduction
+## Introduction
 
 This project demonstrates an end-to-end Azure data engineering pipeline using the Tokyo Olympics 2020 dataset. While it's possible to complete the entire workflow within Azure Synapse Analytics alone, the primary objective of this project is to gain hands-on experience with multiple Azure services and understand how they work together in a modular data pipeline.
 We built a solution that ingests raw data from a public Kaggle dataset, stores it in Azure Data Lake Storage, performs data transformation using Azure Databricks, and makes the cleaned data available for analysis via Azure Synapse Analytics. Finally, we visualize the insights using Power BI.
 
-##Architecture
+## Architecture
 
 ![image](https://github.com/user-attachments/assets/0ce4964a-8e3e-4ac7-b43f-c5258f8d89ec)
 
