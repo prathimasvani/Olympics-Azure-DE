@@ -26,7 +26,7 @@ Cast data types
 Handle missing/duplicate values
 Aggregate or reshape data
 
-Transformed Data – Azure Data Lake Storage (Curated Layer)
+Transformed Data – **Azure Data Lake Storage** (Curated Layer)
 After transformation, data is written back to ADLS Gen2, under /transformed-data. Now it's clean, structured, and ready for analytics
 
 Analytics – **Azure Synapse Analytics**
