@@ -61,6 +61,18 @@ Sink: Stored files in Azure Data Lake Storage Gen2 (inside a /raw-data folder)
 3. Data Storage – Raw Layer
 Created a Storage Account with hierarchical namespace enabled (ADLS Gen2)
 
+4. Data Transformation using Azure Databricks
+
+Mounted ADLS to Azure Databricks using OAuth credentials
+
+Read raw CSV files using PySpark
+
+Performed:
+Data cleaning (nulls, duplicates)
+Data type conversion
+Simple aggregation and formatting
+Wrote cleaned data back to ADLS under /transformed-data
+
 ## Technologies Used
 
 Azure Services: Data Factory, Data Lake Gen2, Azure Databricks, Synapse Analytics
