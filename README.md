@@ -82,18 +82,13 @@ Built interactive dashboards:
       Wrote SQL queries to analyze:
       Athlete count by country, Medal distribution, Gender participation by sport
 
-🔹 6. Data Visualization using Power BI
-Connected Power BI to Synapse or ADLS
+ 6. Data Visualization using Power BI
 
-Built charts including:
+     Connected Power BI to Synapse or ADLS
 
-Bar charts for athlete count
+        ![visualizations_powerbi](https://github.com/user-attachments/assets/4bfc7564-1e7c-4f2d-bb8e-2d31fd583b86)
 
-Donut charts for medal distribution
 
-Maps for geographic visuals
-
-Slicers for interactivity
    
    ## Technologies Used
 
