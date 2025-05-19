@@ -13,12 +13,14 @@ We built a solution that ingests raw data from a public Kaggle dataset, stores i
 Data is available in CSV format (athletes, medals, teams, etc.)
 
 **Data Ingestion – Azure Data Factory**
-You used Azure Data Factory (ADF) to build a pipeline. It copies data from Kaggle (via GitHub or HTTP) into Azure. This is the Extract step in ETL
+
+Used Azure Data Factory (ADF) to build a pipeline. It copies data from Kaggle (via GitHub or HTTP) into Azure. This is the Extract step in ETL
 
 Raw Data – **Azure Data Lake Storage Gen2**
 The raw CSV files are stored in ADLS Gen2 in a folder like /raw-data
 
 Transformation – **Azure Databricks**
+
 Used Azure Databricks with PySpark to
 
 Clean and process the data
@@ -30,9 +32,11 @@ Transformed Data – **Azure Data Lake Storage** (Curated Layer)
 After transformation, data is written back to ADLS Gen2, under /transformed-data. Now it's clean, structured, and ready for analytics
 
 Analytics – **Azure Synapse Analytics**
-You connected Azure Synapse Analytics to the transformed data. Wrote SQL queries to extract insights like Total medals by country, Athlete count per country
+
+Connected Azure Synapse Analytics to the transformed data. Wrote SQL queries to extract insights like Total medals by country, Athlete count per country
 
 Dashboard – **Power BI**
+
 Connected Power BI to Synapse SQL or directly to ADLS via connector
 
 Built interactive dashboards:
