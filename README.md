@@ -10,26 +10,23 @@ We built a solution that ingests raw data from a public Kaggle dataset, stores i
 ![image](https://github.com/user-attachments/assets/0ce4964a-8e3e-4ac7-b43f-c5258f8d89ec)
 
 **Data Source** -  DataSet sourced from Kaggle
-Data is available in CSV format (athletes, medals, teams, etc.)
 
 **Data Ingestion – Azure Data Factory**
 
 Used Azure Data Factory (ADF) to build a pipeline. It copies data from Kaggle (via GitHub or HTTP) into Azure. This is the Extract step in ETL
 
-Raw Data – **Azure Data Lake Storage Gen2**
-The raw CSV files are stored in ADLS Gen2 in a folder like /raw-data
+Raw Data – **Azure Data Lake Storage Gen2** - The raw CSV files are stored in ADLS Gen2 in a folder like /raw-data
 
-Transformation – **Azure Databricks**
+Transformation – **Azure Databricks** 
 
 Used Azure Databricks with PySpark to
 
-Clean and process the data
-Cast data types
-Handle missing/duplicate values
-Aggregate or reshape data
+1) Clean and process the data
+2) Cast data types
+3) Handle missing/duplicate values
+4) Aggregate or reshape data
 
-Transformed Data – **Azure Data Lake Storage** (Curated Layer)
-After transformation, data is written back to ADLS Gen2, under /transformed-data. Now it's clean, structured, and ready for analytics
+Transformed Data – **Azure Data Lake Storage** (Curated Layer) - After transformation, data is written back to ADLS Gen2, under /transformed-data. Now it's clean, structured, and ready for analytics
 
 Analytics – **Azure Synapse Analytics**
 
@@ -41,20 +38,22 @@ Connected Power BI to Synapse SQL or directly to ADLS via connector
 
 Built interactive dashboards:
 
-Stacked bar charts
-Pie/donut charts
-Maps and slicers
+1) Stacked bar charts
+2) Pie/donut charts
+3) Maps and slicers
 
 ## Overview
 
 
 
 ## Technologies Used
+
 Azure Services: Data Factory, Data Lake Gen2, Azure Databricks, Synapse Analytics
 Programming: Python, SQL, Pyspark
 Analytics: Power BI
 
 ## References
+
 Credits to **Darshil Parmar** for his amazing DE content on youtube.
 
 https://www.youtube.com/watch?v=IaA9YNlg5hM
