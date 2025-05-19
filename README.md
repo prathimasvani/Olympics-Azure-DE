@@ -84,13 +84,11 @@ Built interactive dashboards:
 
  6. Data Visualization using Power BI
 
-     Connected Power BI to Synapse or ADLS
+     Connected Power BI to Synapse or ADLS. Created Bar Chart, Map Chart and Donut Chart. Used Slicer for interactivity.
+      
+     ![image](https://github.com/user-attachments/assets/00798a0f-cab9-4806-bec8-477c3d56d5af)
 
-        ![visualizations_powerbi](https://github.com/user-attachments/assets/4bfc7564-1e7c-4f2d-bb8e-2d31fd583b86)
-
-
-   
-   ## Technologies Used
+## Technologies Used
 
 Azure Services: Data Factory, Data Lake Gen2, Azure Databricks, Synapse Analytics
 Programming: Python, SQL, Pyspark
