@@ -51,27 +51,30 @@ Files included: athletes.csv, medals.csv, teams.csv, etc.
 
 2. Data Ingestion using Azure Data Factory
    
-Create a storage Account and container with two folders for raw data and transformed data.
-![image](https://github.com/user-attachments/assets/78fd3f82-ee26-4660-af92-69b3414ad23a)
-![image](https://github.com/user-attachments/assets/4ffbbc12-50cb-4e0c-92fe-a77f5e7c5fb4)
+   Create a storage Account and container with two folders for raw data and transformed data.
+   
+   ![image](https://github.com/user-attachments/assets/78fd3f82-ee26-4660-af92-69b3414ad23a)
+   
+   ![image](https://github.com/user-attachments/assets/4ffbbc12-50cb-4e0c-92fe-a77f5e7c5fb4)
+   
+   Created a pipeline in ADF. Used HTTP connector to fetch raw CSV files from GitHub
+   Sink: Stored files in Azure Data Lake Storage Gen2 (inside a /raw-data folder)
 
-Created a pipeline in ADF. Used HTTP connector to fetch raw CSV files from GitHub
-Sink: Stored files in Azure Data Lake Storage Gen2 (inside a /raw-data folder)
+4. Data Storage – Raw Layer
 
-3. Data Storage – Raw Layer
-Created a Storage Account with hierarchical namespace enabled (ADLS Gen2)
+   Created a Storage Account with hierarchical namespace enabled (ADLS Gen2)
 
-4. Data Transformation using Azure Databricks
+5. Data Transformation using Azure Databricks
 
-Mounted ADLS to Azure Databricks using OAuth credentials
+   Mounted ADLS to Azure Databricks using OAuth credentials
+   
+   Read raw CSV files using PySpark
 
-Read raw CSV files using PySpark
-
-Performed:
-Data cleaning (nulls, duplicates)
-Data type conversion
-Simple aggregation and formatting
-Wrote cleaned data back to ADLS under /transformed-data
+   Performed:
+   Data cleaning (nulls, duplicates)
+   Data type conversion
+   Simple aggregation and formatting
+   Wrote cleaned data back to ADLS under /transformed-data
 
 ## Technologies Used
 
